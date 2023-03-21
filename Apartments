@@ -1,0 +1,6 @@
+Apartments:contentImage
+Write a query to output the apartments whose prices are greater than the average and are also not rented, sorted by the 'Price' column.
+
+SELECT id,city,address,price,status FROM Apartments
+WHERE price > (SELECT AVG(price) FROM Apartments)
+ORDER BY price
