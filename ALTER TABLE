@@ -1,0 +1,30 @@
+ALTER TABLE
+
+
+Jessica has a list of the cities she has visited:
+citiescontentImageShe is going to add the most attractive places she visited in each of the cities.
+Add a new column 'AttractivePlace' and update the values:
+- 'Belem Tower' for Lisbon
+- 'Plaza Mayor' for Madrid
+- 'Eiffel Tower' for Paris
+
+Then show the resulting table.
+
+
+
+
+ALTER TABLE cities ADD AttractivePlace varchar (100);
+
+UPDATE cities
+SET AttractivePlace ='Belem Tower'
+WHERE name = 'Lisbon';
+
+UPDATE cities
+SET AttractivePlace ='Plaza Mayor'
+WHERE name = 'Madrid';
+
+UPDATE cities
+SET AttractivePlace ='Eiffel Tower'
+WHERE name = 'Paris';
+
+SELECT * FROM cities;
